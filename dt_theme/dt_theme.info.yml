@@ -1,0 +1,5 @@
+name: DrupalTutor Theme
+description: 'An example Drupal theme.'
+type: theme
+core_version_requirement: ^10
+base theme: stable9
