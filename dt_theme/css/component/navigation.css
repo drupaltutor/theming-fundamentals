@@ -1,0 +1,13 @@
+.layout-container nav ul {
+  display: flex;
+  padding: 0;
+}
+
+.layout-container nav ul.contextual-links {
+  display: none;
+}
+
+.layout-container nav ul li {
+  list-style: none;
+  margin: 0 20px 0 0;
+}
