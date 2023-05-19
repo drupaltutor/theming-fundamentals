@@ -8,3 +8,5 @@ global-styling:
     component:
       css/component/navigation.css: {}
       css/component/table.css: {}
+    state:
+      css/state.css: {}

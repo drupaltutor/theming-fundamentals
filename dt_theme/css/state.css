@@ -1,0 +1,6 @@
+body .toolbar .toolbar-bar {
+  background-color: #006400;
+}
+body.toolbar-tray-open .toolbar .toolbar-bar {
+  background-color: #000000;
+}
