@@ -7,3 +7,4 @@ global-styling:
       css/layout.css: {}
     component:
       css/component/navigation.css: {}
+      css/component/table.css: {}
