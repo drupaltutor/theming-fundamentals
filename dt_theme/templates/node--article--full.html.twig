@@ -67,8 +67,8 @@
  *
  */
 #}
-<article{{ attributes.addClass(['node', 'type--' ~ node.bundle, 'view-mode--' ~ view_mode]) }}>
-
+{{ attach_library('dt_theme/node') }}
+<article{{attributes.addClass(['node','type--' ~ node.bundle,'view-mode--' ~ view_mode, not node.isPublished ? 'unpublished'])}}>
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>

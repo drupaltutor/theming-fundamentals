@@ -1,0 +1,7 @@
+.node.unpublished {
+  background-color: #fdd;
+  background-image: url(../images/unpublished.png);
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: contain;
+}

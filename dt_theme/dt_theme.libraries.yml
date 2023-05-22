@@ -33,3 +33,8 @@ global-scripts:
     - core/jquery
     - core/drupal
 
+node:
+  version: 1.x
+  css:
+    theme:
+      css/node.css: {}
