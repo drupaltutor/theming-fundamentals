@@ -77,3 +77,11 @@ html {
   background: #ffffff;
   padding: 25px;
 }
+.region.header > div {
+  display: flex;
+  gap: 0.5em;
+  justify-content: flex-start;
+}
+.region.header > div img {
+  height: 40px;
+}
