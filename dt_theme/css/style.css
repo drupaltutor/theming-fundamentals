@@ -85,3 +85,6 @@ html {
 .region.header > div img {
   height: 40px;
 }
+html {
+  background-image: url(../images/raindrops.jpg);
+}
