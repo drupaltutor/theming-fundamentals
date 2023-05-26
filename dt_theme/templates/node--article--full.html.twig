@@ -86,7 +86,7 @@
       </div>
     </footer>
   {% endif %}
-{{ dsm(user) }}
+{{ dsm() }}
 
 
   <div class="article-limit">
@@ -96,6 +96,6 @@
   <div{{ content_attributes }}>
     {{ content }}
   </div>
-  {{ label }}
+  <h2>{{ label[0]['#context']['value'] }}</h2>
 
 </article>
