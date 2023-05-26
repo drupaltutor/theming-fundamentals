@@ -96,6 +96,9 @@
   <div{{ content_attributes }}>
     {{ content }}
   </div>
-  <h2>{{ label[0]['#context']['value'] }}</h2>
+  <div class="comment-wrapper">
+    {{ content.comment }}
+  </div>
+  <h2>{{ label[0]['#context'].value }}</h2>
 
 </article>
