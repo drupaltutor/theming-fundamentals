@@ -105,4 +105,5 @@
   <div>{{ node.getChangedTime | number_format(2) }}</div>
   <div>{{ 42.35 | round(1) }}</div>
   <div>{{ 444442.35 | round(1) | number_format(1) }}</div>
+  <div>{{ user.getRoles | sort | reverse | safe_join(', ')}}</div>
 </article>
