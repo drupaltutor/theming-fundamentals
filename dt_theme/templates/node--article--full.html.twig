@@ -102,5 +102,7 @@
   <h2>{{ label[0]['#context'].value | lower }}</h2>
 
   <div>{{ node.getChangedTime | format_date('custom', 'F j, Y')  }}</div>
-
+  <div>{{ node.getChangedTime | number_format(2) }}</div>
+  <div>{{ 42.35 | round(1) }}</div>
+  <div>{{ 444442.35 | round(1) | number_format(1) }}</div>
 </article>
