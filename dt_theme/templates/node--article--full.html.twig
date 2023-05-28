@@ -88,6 +88,9 @@
   {% endif %}
 {{ dsm() }}
 
+<div class="{{ user.getTimezone | clean_class }}" id="{{ user.getTimezone | clean_id }}">{{ user.getTimezone }}</div>
+
+
 
   <div class="article-limit">
     {% trans %}You have 5 free articles remaining.{% endtrans %}
