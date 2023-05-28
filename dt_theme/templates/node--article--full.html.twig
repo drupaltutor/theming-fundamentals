@@ -99,6 +99,8 @@
   <div class="comment-wrapper">
     {{ content.comment }}
   </div>
-  <h2>{{ label[0]['#context'].value }}</h2>
+  <h2>{{ label[0]['#context'].value | lower }}</h2>
+
+  <div>{{ node.getChangedTime | format_date('custom', 'F j, Y')  }}</div>
 
 </article>
