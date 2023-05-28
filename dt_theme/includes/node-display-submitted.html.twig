@@ -1,0 +1,7 @@
+<footer>
+  {{ author_picture }}
+  <div{{ author_attributes.addClass('author').removeClass('author').setAttribute('id', 'author') }}>
+    {% trans %}Authored by {{ author_name }} on {{ date }}{% endtrans %}
+    {{ metadata }}
+  </div>
+</footer>
