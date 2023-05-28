@@ -143,4 +143,19 @@
   {% else %}
     <div>This is not your content</div>
   {% endif %}
+
+  {% for class in article_classes %}
+    <div>{{ loop.index }}: {{ class }}</div>
+  {% endfor %}
+
+  {% for class in empty_classes %}
+    <div>{{ loop.index }}: {{ class }}</div>
+  {% else %}
+    <div>No empty_classes.</div>
+  {% endfor %}
+
+  {% for i in 0..10 %}
+    <div>{{ i }}</div>
+  {% endfor %}
+
 </article>
