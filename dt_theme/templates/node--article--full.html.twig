@@ -73,7 +73,16 @@
 %}
 {% set test = 'testing' %}
 {%
-  set article_classes = ['thing-1', 'thing2', 'thing-3']
+  set article_classes = [
+    'thing-1',
+    'thing2',
+    'thing-3',
+    'node',
+    'type--' ~ node.bundle,
+    'view-mode--' ~ view_mode,
+    not node.isPublished ? 'unpublished',
+    'author--' ~ node.getOwner.getAccountName | clean_class,
+  ]
 %}
 {% set id = 'somethingelse' %}
 
@@ -81,7 +90,7 @@
 
 
 
-<article{{attributes.addClass(['node','type--' ~ node.bundle,'view-mode--' ~ view_mode, not node.isPublished ? 'unpublished']).setAttribute('id', id).addClass(article_classes)}}>
+<article{{attributes.setAttribute('id', id).addClass(article_classes)}}>
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
