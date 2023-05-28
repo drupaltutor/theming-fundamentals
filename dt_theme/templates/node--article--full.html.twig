@@ -137,11 +137,11 @@
   <div>{{ 444442.35 | round(1) | number_format(1) }}</div>
   <div>{{ user.getRoles | sort | reverse | safe_join(', ')}}</div>
   {% if not logged_in %}
-    <div>You are not logged in.</div>
+    <div>{% trans %}You are not logged in.{% endtrans %}</div>
   {% elseif node.getOwner.id == user.id %}
-    <div>This is your content!</div>
+    <div>{% trans %}This is your content!{% endtrans %}</div>
   {% else %}
-    <div>This is not your content</div>
+    <div>{{ 'This is not your content.' | t }}</div>
   {% endif %}
 
   {% for class in article_classes %}
@@ -157,5 +157,18 @@
   {% for i in 0..10 %}
     <div>{{ i }}</div>
   {% endfor %}
+
+  {%
+    set items = ['item1']
+  %}
+  {% set items_length = items | length %}
+
+  <div>
+    {% trans %}
+      There is 1 item.
+    {% plural items_length %}
+      There are {{ items_length }} items.
+    {% endtrans %}
+  </div>
 
 </article>
