@@ -110,7 +110,9 @@
   {% endif %}
 {{ dsm() }}
 
-<div class="{{ user.getTimezone | clean_class }}" id="{{ user.getTimezone | clean_id }}">{{ user.getTimezone }}</div>
+{% if logged_in %}
+  <div class="{{ user.getTimezone | clean_class }}" id="{{ user.getTimezone | clean_id }}">{{ user.getTimezone }}</div>
+{% endif %}
 <div><a href="https://www.example.com">{{ 'Author Website' | t }}</a></div>
 
 
@@ -134,4 +136,11 @@
   <div>{{ 42.35 | round(1) }}</div>
   <div>{{ 444442.35 | round(1) | number_format(1) }}</div>
   <div>{{ user.getRoles | sort | reverse | safe_join(', ')}}</div>
+  {% if not logged_in %}
+    <div>You are not logged in.</div>
+  {% elseif node.getOwner.id == user.id %}
+    <div>This is your content!</div>
+  {% else %}
+    <div>This is not your content</div>
+  {% endif %}
 </article>
