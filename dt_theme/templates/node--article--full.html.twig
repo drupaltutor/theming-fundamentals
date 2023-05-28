@@ -68,7 +68,20 @@
  */
 #}
 {{ attach_library('dt_theme/node') }}
-<article{{attributes.addClass(['node','type--' ~ node.bundle,'view-mode--' ~ view_mode, not node.isPublished ? 'unpublished'])}}>
+{%
+  set id = 'fullpagearticle'
+%}
+{% set test = 'testing' %}
+{%
+  set article_classes = ['thing-1', 'thing2', 'thing-3']
+%}
+{% set id = 'somethingelse' %}
+
+{% set id = 'node-' ~ node.id %}
+
+
+
+<article{{attributes.addClass(['node','type--' ~ node.bundle,'view-mode--' ~ view_mode, not node.isPublished ? 'unpublished']).setAttribute('id', id).addClass(article_classes)}}>
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
