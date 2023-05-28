@@ -94,10 +94,13 @@
   </div>
 
   <div{{ content_attributes }}>
-    {{ content }}
+      {{ content | without('comment', 'field_tags') }}
   </div>
   <div class="comment-wrapper">
     {{ content.comment }}
+  </div>
+  <div class="tags-wrapper">
+    {{ content.field_tags }}
   </div>
   <h2>{{ label[0]['#context'].value | lower }}</h2>
 
