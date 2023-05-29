@@ -25,4 +25,4 @@ libraries-override:
   captcha/base:
     css:
       theme:
-        css/captcha.css: false
+        css/captcha.css: css/component/dt-captcha.css
