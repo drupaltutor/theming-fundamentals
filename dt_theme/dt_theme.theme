@@ -15,6 +15,14 @@ function dt_theme_preprocess_node(&$variables) {
   ];
 }
 
+function dt_theme_preprocess_user(&$variables) {
+  $variables['user_contact_button'] = [
+    '#theme' => 'dt_theme_user_contact_button',
+    '#account' => $variables['user'],
+  ];
+  dsm($variables);
+}
+
 function dt_theme_theme($existing, $type, $theme, $path) {
   return [
     'dt_theme_user_contact_button' => [
