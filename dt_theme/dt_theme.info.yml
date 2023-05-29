@@ -8,3 +8,15 @@ libraries:
   - dt_theme/global-styling
   - dt_theme/font-awesome
   - dt_theme/global-scripts
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  footer: 'Footer'
