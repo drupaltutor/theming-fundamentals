@@ -23,6 +23,10 @@ function dt_theme_preprocess_user(&$variables) {
   dsm($variables);
 }
 
+function dt_theme_preprocess_dt_theme_user_contact_button(&$variables) {
+  $variables['#attached']['library'][] = 'dt_theme/user-contact-button';
+}
+
 function dt_theme_theme($existing, $type, $theme, $path) {
   return [
     'dt_theme_user_contact_button' => [
