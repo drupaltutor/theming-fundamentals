@@ -44,3 +44,9 @@ user-contact-button:
   css:
     component:
       css/component/user-contact-button.css: {}
+
+captcha:
+  version: 1.x
+  css:
+    theme:
+      css/component/captcha-addons.css: {}

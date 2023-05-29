@@ -26,3 +26,7 @@ libraries-override:
     css:
       theme:
         css/captcha.css: css/component/dt-captcha.css
+
+libraries-extend:
+  captcha/base:
+    - dt_theme/captcha
