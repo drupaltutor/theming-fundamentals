@@ -20,3 +20,9 @@ regions:
   sidebar_first: 'Sidebar'
   footer: 'Footer'
   share_links: 'Share Links'
+
+libraries-override:
+  captcha/base:
+    css:
+      theme:
+        css/captcha.css: false
