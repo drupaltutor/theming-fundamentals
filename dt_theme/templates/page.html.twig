@@ -63,6 +63,12 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
+    {% if page.share_links %}
+      <div class="layout-share-links">
+        {{ page.share_links }}
+      </div>
+    {% endif %}
+
     <div class="layout-content">
       {{ page.content }}
     </div>{# /.layout-content #}

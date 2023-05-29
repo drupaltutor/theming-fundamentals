@@ -88,3 +88,9 @@ html {
 html {
   background-image: url(../images/raindrops.jpg);
 }
+
+.layout-share-links {
+  padding: 10px;
+  background: #ffffff;
+  font-size: 12px;
+}
