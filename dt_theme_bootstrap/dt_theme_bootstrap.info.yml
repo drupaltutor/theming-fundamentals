@@ -1,0 +1,40 @@
+name: dt_theme_bootstrap
+type: theme
+core_version_requirement: ^10
+'base theme': stable9
+starterkit: true
+generator: 'bootstrap5:3.0.7'
+libraries:
+  - dt_theme_bootstrap/base
+  - dt_theme_bootstrap/messages
+  - core/normalize
+  - dt_theme_bootstrap/bootstrap5-js-latest
+  - dt_theme_bootstrap/global-styling
+libraries-extend:
+  user/drupal.user:
+    - dt_theme_bootstrap/user
+  core/drupal.dropbutton:
+    - dt_theme_bootstrap/dropbutton
+  core/drupal.dialog:
+    - dt_theme_bootstrap/dialog
+  file/drupal.file:
+    - dt_theme_bootstrap/file
+  core/drupal.progress:
+    - dt_theme_bootstrap/progress
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/ck5style.css
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+version: 3.0.7
+project: bootstrap5
+datestamp: 1680624251
