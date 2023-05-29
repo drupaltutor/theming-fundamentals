@@ -94,3 +94,9 @@ html {
   background: #ffffff;
   font-size: 12px;
 }
+
+.captcha--custom {
+  padding: 10px;
+  border: 2px solid #ff6666;
+  background-color: #ffdddd;
+}
