@@ -1,0 +1,22 @@
+name: dt_theme_from_kit
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - dt_theme_from_kit/base
+  - dt_theme_from_kit/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - dt_theme_from_kit/user
+  core/drupal.dropbutton:
+    - dt_theme_from_kit/dropbutton
+  core/drupal.dialog:
+    - dt_theme_from_kit/dialog
+  file/drupal.file:
+    - dt_theme_from_kit/file
+  core/drupal.progress:
+    - dt_theme_from_kit/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.9'
