@@ -17,6 +17,5 @@ regions:
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'
-  sidebar_first: 'Left Sidebar'
-  sidebar_second: 'Right Sidebar'
+  sidebar_first: 'Sidebar'
   footer: 'Footer'
