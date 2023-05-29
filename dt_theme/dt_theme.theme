@@ -8,4 +8,17 @@ function dt_theme_preprocess_node(&$variables) {
     ->accessCheck(TRUE)
     ->count()
     ->execute();
+
+  $variables['user_contact_button'] = [
+    '#theme' => 'dt_theme_user_contact_button',
+    '#account' => $variables['node']->getOwner(),
+  ];
+}
+
+function dt_theme_theme($existing, $type, $theme, $path) {
+  return [
+    'dt_theme_user_contact_button' => [
+      'variables' => ['account' => NULL],
+    ],
+  ];
 }
